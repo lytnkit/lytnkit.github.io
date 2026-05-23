@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lytnkit | Hidden Forest Worlds</title>
+<style>
+@font-face {
+    font-family: 'TolkienCyr';
+    src: url('fonts/tolkiencyr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body { 
+    /* ФОНОВАЯ КАРТИНКА: наложение темного градиента + твоё фото */
+    background-color: #142217;
+
+    color: #d8e2dc;
+    font-family: 'TolkienCyr', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header { padding: 60px 20px 30px; }
+
+.logo { width: 170px; height: 170px; border-radius: 50%; object-fit: contain; background: transparent; border: none; box-shadow: 0 0 1px #0b0f0c; }
+h1 { font-size: 3rem; font-weight: 300; margin: 15px 0 5px; color: #f4f7f5; }
+.sub { font-size: 1.2rem; color: #798e7c; font-style: italic; margin-bottom: 30px; }
+nav a { color: #798e7c; text-decoration: none; margin: 0 15px; font-family: sans-serif; font-size: 0.8rem; text-transform: uppercase; }
+nav a:hover { color: #cca43b; }
+.box { max-width: 900px; margin: 0 auto; padding: 20px; }
+h2 { font-weight: 300; font-size: 2rem; color: #f4f7f5; margin: 60px 0 30px; }
+.grid { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; }
+
+/* КАРТОЧКИ: Сделали чуть более темными и слегка прозрачными, чтобы они круто смотрелись поверх фона */
+.card { background: rgba(17, 22, 18, 0.85); padding: 0; width: 300px; border-radius: 4px; border: none; overflow: hidden; backdrop-filter: blur(5px); }
+.card img { width: 100%; height: 420px; object-fit: cover; }
+.card-content { padding: 20px; }
+.title { font-size: 1.4rem; margin: 0 0 15px 0; font-style: italic; color: #f4f7f5; }
+
+.btn { display: inline-block; border: none; color: #cca43b; padding: 10px 20px; text-decoration: none; font-family: sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+.btn:hover { color: #f4f7f5; letter-spacing: 2px; }
+
+/* БЛОКИ ТУТОРИАЛОВ: Тоже сделали стильно-полупрозрачными */
+.v-card { background: rgba(17, 22, 18, 0.85); border-left: 3px solid #cca43b; border-top: 1px solid rgba(31, 39, 33, 0.5); border-right: 1px solid rgba(31, 39, 33, 0.5); border-bottom: 1px solid rgba(31, 39, 33, 0.5); padding: 25px; margin-bottom: 20px; text-align: left; backdrop-filter: blur(5px); }
+.v-card h3 { font-size: 1.6rem; font-weight: 300; margin: 0 0 10px; font-style: italic; }
+.v-card p { color: #8fa093; font-size: 1.1rem; line-height: 1.5; margin: 0 0 15px; }
+.btn-s { color: #cca43b; text-decoration: none; font-family: sans-serif; font-size: 0.7rem; text-transform: uppercase; }
+footer { margin-top: 80px; padding: 30px 20px; border-top: 1px solid rgba(31, 39, 33, 0.5); font-family: sans-serif; font-size: 0.7rem; color: #55665a; text-transform: uppercase; }
+
+/* --- АДАПТИВНОСТЬ ДЛЯ ТЕЛИФОНОВ (Экраны меньше 768px) --- */
+@media (max-width: 768px) {
+    header { padding: 40px 15px 20px; }
+    .logo { width: 130px; height: 130px; }
+    h1 { font-size: 2.3rem; }
+    .sub { font-size: 1rem; margin-bottom: 20px; }
+    nav a { margin: 0 8px; font-size: 0.75rem; }
+    
+    h2 { font-size: 1.6rem; margin: 40px 0 20px; }
+    .box { padding: 10px 15px; }
+    .grid { gap: 20px; }
+    
+    .card { width: 100%; max-width: 320px; }
+    .card img { height: 380px; }
+    
+    .v-card { padding: 20px; }
+    .v-card h3 { font-size: 1.3rem; }
+    .v-card p { font-size: 0.95rem; }
+}
+</style>
+</head>
+<body>
+<header>
+<img src="logo.png.jpg" alt="lytnkit" class="logo">
+<h1>lytnkit</h1>
+<div class="sub">where tiny life begins 🌲</div>
+<nav>
+<a href="#wallpapers">Wallpapers</a>
+<a href="#tutorials">Tutorials</a>
+<a href="mailto:lytnkit@gmail.com">Contact</a>
+</nav>
+</header>
+<div class="box">
+<h2 id="wallpapers">Free Phone Wallpapers</h2>
+<div class="grid">
+    
+<div class="card">
+<img src="wallpaper1.jpg">
+<div class="card-content">
+<div class="title">Tall forest house</div>
+<a href="wallpaper1.jpg" download="lytnkit_tall_forest_house.jpg" class="btn">Download</a>
+</div>
+</div>
+
+<div class="card">
+<img src="wallpaper2.
+
+jpg">
+<div class="card-content">
+<div class="title">Enchanted forest village</div>
+<a href="wallpaper2.jpg" download="lytnkit_enchanted_forest_village.jpg" class="btn">Download</a>
+</div>
+</div>
+
+</div>
+<h2 id="tutorials">Grimoire of Tutorials</h2>
+<div class="v-card">
+<h3>Bark Processing Guide</h3>
+<p>How I find, clean, and dry natural tree bark so it stays durable, mold-free, and safe for miniature fantasy builds inside the house.</p>
+<a href="https://www.instagram.com/lytnkit" class="btn-s" target="_blank">Open Tutorial →</a>
+</div>
+<div class="v-card">
+<h3>Working with Live Moss</h3>
+
+<p>A complete breakdown of stabilizing real forest moss using glycerin so it keeps its bright
+
+green, soft texture for years without any watering.</p>
+<a href="https://www.instagram.com/lytnkit" class="btn-s" target="_blank">Open Tutorial →</a>
+</div>
+</div>
+<footer>
+<p>© 2026 lytnkit. crafted by hand, preserved in moss.</p>
+</footer>
+</body>
+</html>
